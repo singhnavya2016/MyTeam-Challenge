@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------ TIPOGRAFIA ------*/
+.title h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.title h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.title p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.grid-item{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.pic-text{
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: #A9A9A9;
+}
+
+
+/*------ ESTRUCTURA ------*/
+
+.title {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20rem 20rem 20rem;
+
+    padding: 1rem;
+}
+
+.pic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.gallery img {
+    width: 150px;
+    height: auto;
+}
+
+#pic1,
+#pic3,
+#pic5 {
+    justify-content: flex-start;
+}
+
+#pic2,
+#pic4,
+#pic6 {
+    justify-content: flex-end;
+}
+.pic-text {
+    display: flex;
+    flex-direction: row;
+}
+.vertical {
+    writing-mode: vertical-lr;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+/*------ MEDIA QUERYS ------*/
+@media only screen and (min-width: 600px) {
+    main {
+        padding: 2rem;
+    }
+    .title {
+        height: auto;
+        flex-direction: row;
+        padding: 2rem 4rem 2rem 4rem;
+    }
+    .title div {
+        width: 50%;
+    }
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20rem 20rem;
+    }
+    #pic1, #pic3, #pic4, #pic6 {
+        justify-content: flex-start;
+    }
+    #pic2, #pic5 {
+        justify-content: flex-end;
+    }
+    footer {
+        margin-top: auto;
+        padding: 2rem;
+    }
+}
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 3rem 0 3rem;
+    }
+    .gallery {
+        width: 70vw;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .gallery img {
+        width: 170px;
+    }
+}
