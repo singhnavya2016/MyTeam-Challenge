@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://https://myteamchallenges.netlify.app">
+    <a href="https://github.com/singhnavya2016/MyTeam-Challenge">
       Solution
     </a>
     <span> | </span>
@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](/MyTeam-Challenge/Screenshot.png)
+![screenshot](/Screenshot.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
